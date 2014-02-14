@@ -1,0 +1,51 @@
+<div class="header">
+	<a href="#/dashboard"><span class="header-text-link entypo pull-left">&#9776;</span></a>
+	<span class="header-logo" href="#">Light</span>
+	<span class="header-text-link entypo pull-right">&#128190;</span>
+</div>
+
+<div class="top light">
+	<div class="row">
+		<div class="col-xs-12 col-md-6">
+			<div class="row">
+				<div class="col-xs-6" style="text-align:right;">
+					<a href="#/dashboard"><span class="meteo light-on">B</span></a>
+				</div>
+				<div class="col-xs-6" style="text-align:left;">
+					<span class="get-on">{{params.start | int2hour}}</span>
+				</div>
+			</div>
+		</div>
+		<div class="col-xs-12 col-md-6">
+			<div class="row">
+				<div class="col-xs-6" style="text-align:right;">
+					<span class="meteo light-off">C</span>
+				</div>
+				<div class="col-xs-6" style="text-align:left;">
+					<span class="get-off">{{params.end | int2hour}}</span>
+				</div>
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-xs-12">
+				{{params.time | int2hour}} of light per day
+			</div>
+		</div>
+	</div>
+</div>
+
+<!--
+<div class="items">
+	<div class="item light">
+		<div class="on-area" style="left: 30%; right: 15%;">
+			<span class="get-on">09:00</span>
+			<span class="meteo light-on">B</span>
+			<span class="get-off">17:00</span>
+			<span class="meteo light-off">C</span>
+		</div>
+		<span class="title">Light</span>
+	</div>
+</div>
+-->
+
+<div class="bottom light"></div>
